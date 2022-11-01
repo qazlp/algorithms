@@ -8,7 +8,6 @@ function binarySearch(array, item){
         let middle = Math.floor((low + high) / 2);
         let guess = array[middle];
         if(guess === item){
-             console.log(middle);
              return middle;
         }
         if(guess > item){
@@ -16,9 +15,9 @@ function binarySearch(array, item){
         }
         else{
          low = middle + 1
-        }
-        return null;
+        }    
      }
+     return null;
 }
 
 let array = [12,13,34,56,465,2024,3023];
